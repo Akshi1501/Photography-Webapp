@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="" utf-8>
+    <meta name="viewport" content="" width=device-width, initial-scale="1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
+        <script src="https://kit.fontawesome.com/62fcddc8c5.js" crossorigin="anonymous"></script>
+        {% load static%}
+        <link rel="stylesheet" href="{%static 'myorders.css'%}">
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <div class="logo"><img src="{% static 'logo.jpg' %}" alt="logo"></div>
+                <li><a href="">SHOP</a></li>
+                <li><a href="/edit">EDIT</a></li>
+                <li><a href="/booking">BOOKINGS</a></li>
+                <li><a href='/contact'>CONTACT</a></li>
+                <li><a href="/aboutus">ABOUT</a></li>
+                <li><a href="/home"><span class="material-symbols-outlined">
+                    home
+                    </span>
+                </a></li>
+                <li><a href="/profile"><span class="material-symbols-outlined">
+                    manage_accounts
+                    </span></a></li>
+            </ul> 
+        </nav>    
+        <section class = "bk">
+                <div>
+                <center><h2 style="font-size:50px;font-weight:bold;padding:20px">Order Summary</h2></center>
+                <center> 
+                <table class="tb">
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th style="padding-left:70px">Address</th>
+                                <th>Phone Number</th>
+                                <th>Pin Code</th>
+                                <th>Total Price</th>
+                            </tr> 
+                        </thead>
+                        <tbody>
+                            {% for order in data %}
+                            <tr>
+                                <td>{{order.orderid}}</td>
+                                <td  style="max-width:400px;">{{order.address}}</td>
+                                <td>{{order.primary_phone_no}}</td>
+                                <td>{{order.pincode}}</td>
+                                <td>{{order.total_price}}</td>
+                            </tr> 
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </center>
+            </div>                     
+        </section
+    </body>
+</html>

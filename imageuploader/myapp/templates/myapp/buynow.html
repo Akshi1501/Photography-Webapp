@@ -1,0 +1,88 @@
+<html>
+    <head>
+        {% load static%}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="{% static 'buynow.css' %}">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
+    </head>
+    <body>
+    <nav class="nvvv">
+        <ul class="nlll">
+            <div class="logo"><img src="{% static 'logo.jpg' %}" alt="logo"></div>
+            <li><a href="/cart">SHOP</a></li>
+            <li><a href="/edit">EDIT</a></li>
+            <li><a href="/booking">BOOKINGS</a></li>
+            <li><a href='/contact'>CONTACT</a></li>
+            <li><a href="/aboutus">ABOUT</a></li>
+            <li><a href="/home"><span class="material-symbols-outlined">home</span></a></li>
+            <li><a href="/profile"><span class="material-symbols-outlined">manage_accounts</span></a></li>
+        </ul> 
+    </nav>  
+    <div class="container bg-dark">
+        <form method="POST" action="/placeorder">
+            {% csrf_token %}
+            <div class="row bg-dark">
+                <div class="col-sm-2 bg-dark">
+                    <h2>ITEMS</h2>
+                    <hr style="color:black">
+                    <table class="table align-middle mb-0 bg-dark text-light">
+                        <thead class="bg-dark text-light">
+                        <tr>
+                            <th>Items</th>
+                            <th>Quantity</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for item in data %}
+                        <br>
+                        <tr>
+                            <td>
+                            <div class="d-flex align-items-center">
+                                <img
+                                    src="{{item.image.url}}"
+                                    alt=""
+                                    style="width: 45px; height: 45px"
+                                    class="rounded-circle"
+                                    />
+                                <div class="ms-3">
+                                <p  class="info fw-bold mb-1">{{item.item_name}}</p>
+                                </div>
+                            </div>
+                            </td>
+                            <td>
+                            <center><p class="info fw-normal mb-1">{{item.quantity}}</p></center>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                    <h4>Total Price : {{total_price}}</h4>
+                </div>
+                <center><h2>Address</h2>
+                    <hr style="background-color:black;color:black">
+                <div style="margin-left:20%; margin-top: 10%;"class="row">
+                    <br>
+                    <textarea class="form-control" type="text" name="address" placeholder="Enter Address *" required></textarea><br>
+                    <input class="form-control" type="number" name="p_phone" placeholder="Enter Primary Phone Number *" required></input><br>
+                    <input class="form-control" type="number" name="s_phone" placeholder="Enter Secondary Phone Number"></input><br>
+                    <input class="form-control" type="number" name="pin" placeholder="Enter PIN Code *" required></input>
+                    <input type="hidden" name="total_price" value="{{total_price}}"></input>
+                    <h2>Payment Method</h2>
+                    <br>
+                    <input class="form-control" type="checkbox" checked disabled="disabled" name="payment"></input>
+                    <span>Cash</span>
+                </center>
+                </div>
+            </div>
+            <hr style="color:black">
+            <center>
+            <div style="padding:20px;" class="row">
+                    <button class="btn btn-success"type="submit">Place Order</button>
+                </div>
+            </center>
+            </div>
+        </form>
+    </div>
+</html>

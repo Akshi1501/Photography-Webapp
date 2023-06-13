@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Advent+Pro:wght@200&family=Dosis:wght@300&family=Edu+QLD+Beginner&family=Jost:wght@200&family=Maven+Pro&family=Oxygen&family=Philosopher&family=Saira:wght@300&family=Square+Peg&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    color: aliceblue;
+}
+.logo{
+    width:20%;
+    display:flex;   
+    justify-content:center;
+    align-items:center;
+}
+.conttt{
+    color: aliceblue;
+}
+.logo img{
+    width: 20%; 
+    border: 1px solid white;
+    border-radius: 40px;
+}
+.nvvv{
+    display:flex;
+    background: none;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    background:rgba(39, 37, 37, 0.4);
+}
+.nlll{
+    width:100%;
+    display:flex;
+    float: right;
+    background: transparent;
+}
+.nlll li{
+   list-style:none;
+   padding: 26px 30px;
+}
+.nlll li a{
+   text-decoration:none;
+   color:white;
+   font-family: Arial, Helvetica, sans-serif;
+   float: right;
+   font-size: 13px; 
+}
+.btn-sm{
+    padding: 3px 10px;
+    vertical-align: middle;
+}
+.nlll li a:hover {
+    text-decoration:underline;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 250ms ease; 
+ }
+ .hehe{
+    font-weight: bold;
+    font-family: 'Square Peg', cursive;
+    font-size: 300%;
+    margin-left: 38%;  
+ }
+.lili{
+    background-color:aquamarine; 
+    padding:10px;
+    width: 70%;
+    border-radius: 20px;
+    float: right;
+    margin-top: 0%;
+    margin-right: 15%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Square Peg', cursive;
+}
+.lili a{
+    text-decoration: none;
+}
+.check_circle{
+    border-radius: 10px;
+    background-color: black;
+    color: aliceblue;
+}
+.inpu{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: aliceblue;
+    font-family: sans-serif;
+    padding-left: 14px;
+}
+.qty{
+    margin-top: 13px;
+    float:left;
+}

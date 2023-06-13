@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&family=Dosis:wght@300&family=Maven+Pro&family=Oxygen&family=Saira:wght@300&family=Square+Peg&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    overflow-x: hidden;
+}
+.logo{
+    width:20%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.logo img{
+    width: 20%;
+    border: 1px solid white;
+    border-radius: 40px;
+   
+}
+.navbar{
+    display:flex;
+    background: none;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    cursor: pointer;
+    background:rgba(39, 37, 37, 0.4);
+}
+body{
+    background-size: cover;
+    background:rgba(0,0,0,0.4);
+}
+.nav-list{
+    width:100%;
+    display:flex;
+    background: transparent;
+}
+.nav-list li{
+   list-style:none;
+   padding: 26px 30px;
+}
+.nav-list li a{
+   text-decoration:none;
+   color:white;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 13px; 
+}
+.btn-sm{
+    padding: 3px 10px;
+    vertical-align: middle;
+}
+.nav-list li a:hover {
+    text-decoration:underline;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 250ms ease;
+ }
+.background{
+    background:rgba(0,0,0,0.3);
+    background-size: cover;
+    background-blend-mode: darken; 
+}
+.box-main{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.firstSection{
+    height: 100vh;   
+}
+.btn{
+    padding:8px 20px;
+    margin: 7px 0;
+    border: 2px transparent;
+    border-radius: 18px;
+    font-size: 15px;
+    background:none;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+
+.secLeft{
+    padding-top: 25px;
+    background-color: #edeef0;
+    padding-left: 29.8%;
+    background-image: url('bback.webp');
+    background-position: 100%;
+}
+
+.secLeft button{
+    color: black;
+    padding:8px 20px;
+    margin: 7px 0;
+    border: 2px transparent;
+    border-radius: 18px;
+    font-size: 15px;
+    background:none;
+    color: aliceblue;
+    cursor: pointer;
+    position: absolute;
+    top: 184%;
+    left: 75%;
+    font-size: 120%;
+    transition: background-color 500ms;
+}
+.secLeft button:hover{
+    background-color: antiquewhite;
+    color: #000;
+}
+.imgBefore{
+    width: 535.2px;
+    height:600px; 
+}
+.imgAfter{
+    width:535.2px;
+    height:600px;
+}
+*{
+    box-sizing: border-box;
+}
+.contact{ 
+    height: 68vh;
+}
+.signout{
+    
+    background:transparent;
+    border: #edeef0;
+    color: aliceblue;
+    float: right;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.signout a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.leftsec{
+    position: absolute;
+    top:13%;
+    left:5%;
+    width:50%;
+    height:75%;
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 10px 15px;
+    background: rgba(255, 255, 255,0.9);
+    background-position: center;
+    background-size: cover;
+}
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Aboreto&family=Advent+Pro:wght@200&family=Alumni+Sans+Pinstripe&family=Dosis:wght@300&family=Edu+QLD+Beginner&family=Jost:wght@200&family=Maven+Pro&family=Oxygen&family=Philosopher&family=Saira:wght@300&family=Square+Peg&display=swap');
+
+.text-center{
+    position: absolute;
+    left:2%;
+    top:22%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 70px;
+    color:#0391fc;
+}
+.btnn{
+    padding:8px 20px;
+    margin: 7px 0;
+    border: 2px transparent;
+    border-radius: 7px;
+    font-size: 15px;
+    background:#0391fc;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.texh{
+    position: absolute;
+    left:5%;
+    top:41%;
+    color: #155585;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+}
+.tex{
+    position: absolute;
+    left:5%;
+    top:48%;
+    color: #155585;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+}
+.texi{
+    position: absolute;
+    left:5%;
+    top:58%;
+    color: #155585;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+}
+.texi a{
+    text-decoration: none;
+    color: #155585;
+}
+.form{
+    position: absolute;
+    right:5%;
+    top:16%;
+    max-width: 500px;
+   
+}
+.popup{
+    position: absolute;
+    left:38%;
+    top:40%;
+    z-index: 999;
+    height:20%;
+    width:25%;
+    background:linear-gradient(to bottom right,rgb(25,78,112) 30%,rgb(0,0,0,0.9));
+    border-radius: 4px;
+    color: aliceblue;
+  } 
+  .popup h5{
+    position: relative;
+    left:30px;
+    top:-29px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 19px;
+    color:aliceblue; 
+  }
+  .popup p{
+    position: absolute;
+    left:30px;
+    top:30%;
+  }
+  
+  .ok{
+    width:25%;
+    position:absolute;
+    left:240px;
+    top:90px;
+    height:40px;
+    background-color: #0391fc;
+    color: aliceblue;
+    border-radius: 5px;
+    border:none;
+  }
+  button:hover{
+   color: black;
+   background-color: rgba(255, 255, 255, 0.5); 
+   cursor: pointer;
+
+  }
+.form-input{
+    margin: 14px 0;  
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 19px;
+    border: 0px;
+    outline: none;
+    border-radius:5px;
+    background:rgba(255, 255, 255,0.9);
+}
+.form-input::placeholder{
+    color: #000;
+    font-weight: 700;
+    font-family: 'Advent Pro', sans-serif;
+}
+.btn-dark{
+    color: black;
+    border: 2px black;
+    padding: 3px 10px;
+    vertical-align: middle;
+    font-size: 100%;
+}
+.follow{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 120%;
+    color: aliceblue;
+    background-color: #000;
+}
+.insta{
+    justify-content: center;
+    align-items: center;
+    width: 2%;
+    border-radius: 49px;
+    padding-top: 3px;
+    margin-top: 3px;
+}
+.footer{
+    background-color: rgb(39, 38, 38);
+}
+.text-footer{
+    text-align: center;
+    padding-top: 15px;
+    text-decoration: underline;
+    padding-bottom: 6px;
+    background-color: black;
+    color: aliceblue;  
+}
+.l{
+    color: aliceblue;
+}
+
+
+
+
+*{box-sizing: border-box;}
+
+.img-comp-container {
+  position: relative;
+  height: 610px; /*should be the same height as the images*/
+  border-radius: 6px;
+}
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+.img-comp-img img {
+  display: block;
+  
+}
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color:rgb(219, 62, 62);
+  opacity: 0.7;
+  border-radius: 90%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Aboreto&family=Advent+Pro:wght@200&family=Alumni+Sans+Pinstripe&family=Cairo:wght@300&family=Dosis:wght@300&family=Edu+QLD+Beginner&family=Hind+Siliguri:wght@300&family=Jost:wght@200&family=Maven+Pro&family=Oxygen&family=Philosopher&family=Saira:wght@300&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Aboreto&family=Advent+Pro:wght@200&family=Alumni+Sans+Pinstripe&family=Cairo:wght@300&family=Dosis:wght@300&family=Edu+QLD+Beginner&family=Hind+Siliguri:wght@300&family=Jost:wght@200&family=Maven+Pro&family=Oxygen&family=Philosopher&family=Quicksand&family=Saira:wght@300&family=Square+Peg&display=swap');
+.container{
+    width:100%;
+    height:100vh;
+    background: linear-gradient(rba(0,0,0,0.7),rba(0,0,0,0.7)), url(aboutusback.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.row{
+    display:flex;
+    height:100vh;
+    align-items:center;
+}
+
+.col{
+    width:50%;
+    
+}
+h1{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: lighter;
+    color: aliceblue;
+    font-size: 79px;
+    padding-left: 25px;
+    position: relative;
+    text-shadow: 0 0 15px #000;
+    top:10px;
+}
+.pp{
+    color: #F5F5F5;
+    font-size: 20px;
+    font-family: 'Oxygen', sans-serif;
+    padding-top: 15px;
+    padding-left: 37px;
+    text-shadow: 0 0 15px #000;
+}
+.card{
+    position: relative;
+    top:40px;
+    left:27%;
+    width: 200px;
+    height:230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding:140px 20px;
+    box-sizing: border-box;
+    cursor:pointer;
+    margin: 10px 20px;
+    transform: translateY(0px);
+    background-position: center;
+    background-size: cover;
+    transition: transform 800ms;
+}
+.card:hover{
+    transform: translateY(-10px);
+    
+}
+h5{
+    color:	#F0FFFF;
+    text-shadow: 0 0 5px #999;
+    font-family: 'Quicksand', sans-serif;
+}
+.card1{
+    position: relative;
+    top:7px;
+    background: url('card1.webp');
+    background-size: cover;
+}
+.card2{
+    position: relative;
+    top:23px;
+    background: url('card2.webp');
+    background-size: cover;
+}
+.card3{
+    background: url('card3.jpg');
+    background-size: cover;
+}
+.card4{
+    position: relative;
+    top:-16px;
+    background: url('card4.jpg');
+    background-size: cover;
+}
+.card p{
+    color: aliceblue;
+    font-size: 12px;
+    padding-top: 3px;
+    text-shadow: 0 0 15px #000;
+    font-family: 'Quicksand', sans-serif;
+}
+p{
+    text-align: justify;
+    color: aliceblue;
+    font-family: 'Quicksand', sans-serif;
+}
+h4{
+   position: relative;
+   left:35px;
+   font-size: 17px;
+   top:-26px;
+    color: aliceblue;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+}
+.pad{
+    margin-left: 10px;
+    margin-right: 0%;
+    padding-right: 0%;
+    color: aliceblue;
+}

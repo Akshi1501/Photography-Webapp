@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Aboreto&family=Advent+Pro:wght@200&family=Alumni+Sans+Pinstripe&family=Cairo:wght@300&family=Dosis:wght@300&family=Edu+QLD+Beginner&family=Hind+Siliguri:wght@300&family=Jost:wght@200&family=Maven+Pro&family=Oxygen&family=Philosopher&family=Quicksand&family=Saira:wght@300&family=Square+Peg&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Oxygen', sans-serif;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.305);
+    font-family: 'Oxygen', sans-serif;
+}
+*{
+    margin:0;
+    padding:0;
+}
+.logo{
+    width:20%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.logo img{
+    width: 20%;
+    border: 1px solid white;
+    border-radius: 40px;
+}
+.navbar{
+    display:flex;
+    background: none;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    background:rgba(39, 37, 37, 0.4);
+}
+.nav-list{
+    width:100%;
+    display:flex;
+    float: right;
+    background: transparent;
+    
+}
+.nav-list li{
+   list-style:none;
+   padding: 26px 30px;
+   
+}
+.nav-list li a{
+   text-decoration:none;
+   color:white;
+   font-family: Arial, Helvetica, sans-serif;
+   float: right;
+   font-size: 13px; 
+}
+.btn-sm{
+    padding: 3px 10px;
+    vertical-align: middle;
+}
+.nav-list li a:hover {
+    text-decoration:underline;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 250ms ease;
+    
+ }
+
+th{
+    padding:30px;
+    border-bottom: 2px black solid;
+    font-size: 20px;
+    font-size: bold;
+    background-color:transparent;
+    font-family: 'Oxygen', sans-serif;
+}
+td{
+    
+    padding: 38px;
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 120px;
+    height: auto;
+    font-family: 'Oxygen', sans-serif;
+}
+.tb{
+    margin-left:30px;
+    padding-right: 50px;
+    font-family: 'Oxygen', sans-serif;
+}
+.bk{
+    width:100%;
+    height: auto;
+    position: absolute;
+    background-color: black;
+    left:0px;
+    background-size: cover;
+    font-family: 'Oxygen', sans-serif;
+}
+.container{
+    position: absolute;
+    left:180px;
+    background:url('myfinal.jpg');
+    padding:30px;
+    background-size: cover;
+    width: fit-content;
+    height: auto;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.4);
+    border-radius: 10px;
+}

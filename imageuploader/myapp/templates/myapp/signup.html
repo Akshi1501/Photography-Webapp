@@ -1,0 +1,57 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        {% load static %}
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{%static 'signup.css' %}">
+    </head>
+    <body style="background-image:url('{%static 'finally.jpg' %}');">
+        <div class="lefttext">
+            <p>Make yourself familiar with us!</p>
+        </div>
+    <div class="center">
+        <h3>Register yourself here!!!</h3>
+        <center>{% for message in messages %}
+        <i>{{message}}</i.
+        {% endfor %}</center>
+        <form action="/signup" method="POST">
+            {% csrf_token %}
+            <div class="txt_field">
+                <input type="text" id="username" name="username"  Required>
+                <span></span>
+                <label for="">Username</label>
+            </div>
+           <div class="txt_field">
+               <input type="text" id="fname" name="fname" Required>
+               <span></span>
+               <label for="">First Name</label>
+           </div>
+            <div class="txt_field">
+                <input type="text" id="lname" name="lname" Required>
+                <span></span>
+                <label for="">Last Name</label>
+            </div>
+            <div class="txt_field">
+                <input type="email" id="email" name="email"  Required>
+                <span></span>
+                <label for="">Email</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" id="pass1" name="pass1" Required>
+                <span></span>
+                <label for="">Password</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" id="pass2" name="pass2" Required>
+                <span></span>
+                <label for="">Confirm your Password</label>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    </body>
+</html>

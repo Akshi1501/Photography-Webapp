@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Aboreto&family=Advent+Pro:wght@200&family=Dosis:wght@300&family=Edu+QLD+Beginner&family=Jost:wght@200&family=Maven+Pro&family=Oxygen&family=Philosopher&family=Saira:wght@300&family=Square+Peg&display=swap');
+
+.logo{
+    width:20%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.logo img{
+    width: 20%;
+    border: 1px solid white;
+    border-radius: 40px;
+}
+.navbar{
+    display:flex;
+    background: none;
+    cursor: pointer;
+    background:rgba(39, 37, 37, 0.4);
+}
+.nav-list{
+    width:100%;
+    display:flex;
+    float: right;
+    background: transparent;
+    
+}
+.nav-list li{
+   list-style:none;
+   padding: 26px 30px;
+   
+}
+.nav-list li a{
+   text-decoration:none;
+   color:white;
+   font-family: Arial, Helvetica, sans-serif;
+   float: right;
+   font-size: 13px; 
+}
+.btn-sm{
+    padding: 3px 10px;
+    vertical-align: middle;
+}
+.nav-list li a:hover {
+    text-decoration:underline;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 250ms ease;  
+ }
+*{box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #0b0b0b;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.container{
+  color: aliceblue;
+}
+h1{
+  font-family: 'Aboreto', cursive;
+  text-align: center;
+  color: #0b0b0b;
+}
+.py{
+  position: absolute;
+  left:39%;
+}
+.container{
+  color: aliceblue;
+}
+.hedding{    
+  color:black;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px; 
+}
+.column{
+display:inline-block;
+margin-top:50px;
+padding-bottom:20px;
+}
+.column1{
+  padding:20px;
+  max-width: 1200px;
+  display: inline;
+  width: calc(100%/4);
+  margin-left:40px;
+  color:white;
+  font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.wodd{
+  background-image: url('wodd.jpg');
+  background-image: cover;
+}
+.follow{
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 120%;
+  color: aliceblue;
+}
+.insta{
+  justify-content: center;
+  align-items: center;
+  width: 2%;
+  border-radius: 49px;
+  padding-top: 3px;
+  margin-top: 1px;
+}
+.footer{
+  background-color: rgb(39, 38, 38);
+}
+.text-footer{
+  text-align: center;
+  padding-top: 2px;
+  text-decoration: underline;
+  padding-bottom: 2px;
+  background-color: black;
+  color: aliceblue;  
+}
+.btn{
+  font-size: 20px;
+  background: transparent;
+  border-radius: 3px;
+  cursor: pointer;
+}

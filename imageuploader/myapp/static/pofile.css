@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Advent+Pro:wght@200&family=Dosis:wght@300&family=Maven+Pro&family=Oxygen&family=Philosopher&family=Saira:wght@300&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Advent+Pro:wght@200&family=Dosis:wght@300&family=Jost:wght@200&family=Maven+Pro&family=Oxygen&family=Philosopher&family=Saira:wght@300&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Advent+Pro:wght@200&family=Dosis:wght@300&family=Edu+QLD+Beginner&family=Jost:wght@200&family=Maven+Pro&family=Oxygen&family=Philosopher&family=Saira:wght@300&family=Square+Peg&display=swap');
+*{
+    margin:0;
+    padding:0;
+    color: aliceblue;
+}
+
+.logo{
+    width:20%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.logo img{
+    width: 20%;
+    border: 1px solid white;
+    border-radius: 40px;
+}
+.navbar{
+    display:flex;
+    background: none;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    background:rgba(39, 37, 37, 0.4);
+}
+.nav-list{
+    width:100%;
+    display:flex;
+    float: right;
+    background: transparent;
+    
+}
+.nav-list li{
+   list-style:none;
+   padding: 26px 30px;
+   
+}
+.nav-list li a{
+   text-decoration:none;
+   color:white;
+   font-family: Arial, Helvetica, sans-serif;
+   float: right;
+   font-size: 13px; 
+}
+.btn-sm{
+    padding: 3px 10px;
+    vertical-align: middle;
+}
+.nav-list li a:hover {
+    text-decoration:underline;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 250ms ease;
+ }
+.card h1{
+    position: absolute;
+    top:18%;
+    left:49%;
+    font-family: 'Edu QLD Beginner', cursive;
+    color:aliceblue;
+    font-size: 300%;
+}
+ .tika{
+    position:absolute;
+    top:14%;
+    left:19%;
+    width : 250x;
+    height : 250px;
+    border: 1px solid white;
+    border-radius: 50%;
+ }
+.media{
+    background-color: aliceblue;
+    display: inline-block;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Aboreto&family=Advent+Pro:wght@200&family=Alumni+Sans+Pinstripe&family=Cairo:wght@300&family=Dosis:wght@300&family=Edu+QLD+Beginner&family=Jost:wght@200&family=Maven+Pro&family=Oxygen&family=Philosopher&family=Saira:wght@300&family=Square+Peg&display=swap');
+.logoo{
+    position: absolute;
+    left: 47.5%;
+    top: 16%;
+    z-index: 2;
+}
+.logoo img{
+    position: absolute;
+    left: 46%;
+    top: 44%;
+    width: 100px;
+    height: 100px;
+    border-radius: 45px;
+}
+
+.card{
+    position: absolute;
+    top:20%;
+    left:15%;
+    width:70%;
+    height:70%;
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 10px 15px;
+    background:rgb(47, 46, 33);
+    background-position: center;
+    background-size: cover;
+}
+.home{
+    position: absolute;
+    top:70%;
+    left:20%;
+    width:25%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+}
+.home:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.logout{
+    position: absolute;
+    top:70%;
+    border: 1px solid black;
+    left:58%;
+    width:25%;
+    border-radius: 10px;
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+}
+.logout:hover{
+    background-color: aliceblue;
+    color: black;
+}
+.account-heading1{
+    position: absolute;
+    top: 37%;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 25px;
+    
+}
+.account-heading2{
+    position: absolute;
+    top:46%;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 25px;
+    
+}
+
+.text-secondary1{
+    position: absolute;
+    top: 38%;
+    left: 66%;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 20px;
+}
+.text-secondary2{
+    position: absolute;
+    top:46%;
+    left: 66%;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 20px;
+}
+.card a{
+    text-decoration: none;
+}
+.signout{
+    background:transparent;
+    color: aliceblue;
+    float: right;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.signout a{
+    color: aliceblue;
+    text-decoration: none;
+}

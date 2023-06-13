@@ -1,0 +1,89 @@
+tall<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        {% load static %}
+        <meta name="description" content="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{%static 'bookings.css' %}">
+    </head>
+    <body style="background-image:url('{%static 'bqq.jpg' %}'); background-size:cover;">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <div class="logo"><img src="{% static 'logo.jpg' %}" alt="logo"></div>
+                <li><a href="/cart">SHOP</a></li>
+                <li><a href="/edit">EDIT</a></li>
+                <li><a href="/booking">BOOKINGS</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+                <li><a href="/aboutus">ABOUT</a></li>
+                <li><a href="/home"><span class="material-symbols-outlined">home</span></a></li>
+                <li><a href="/profile"><span class="material-symbols-outlined">manage_accounts</span></a></li>
+            </ul> 
+        </nav>
+        {% for message in messages %}
+        <div class="popup">
+            <span class="material-symbols-outlined">
+                info
+                </span><h5>Message</h5>
+            <p>{{message}}</p>
+            <a href="/booking"><button class="ba">Book Again</button></a>
+            <a href="/home"><button class="ok">Okay</button></a>
+        </div>
+        {% endfor %}
+    <div class="center" id="main">
+        <h3>Book Your Photograher here: </h3>
+        <form action="/booking" method="POST">
+            {% csrf_token %}
+            <div class="spe">
+                <label for="">Username</label>
+                <input type="text" id="name" name="username"  value="{{user.username}}" Required readonly>
+                <span></span>
+            </div>
+            <br>
+           <div class="txt_field">
+               <input type="phone" id="phone" name="phone" Required>
+               <span></span>
+               <label for="">Phone</label>
+           </div>
+           <br>
+           <br>
+            <div class="txt_field">
+                <input type="text" id="eventname" name="eventname" Required>
+                <span></span>
+                <label for="">Event Name</label>
+            </div>
+            <br>
+            <br>
+            <div class="spe">
+                <label for="">Date</label>
+                <input type="date" id="date" name="date" Required>
+                <span></span>
+            </div>
+            <br>
+            <br>
+            <div class="txt_field">
+                <input type="text" id="preferences" name="preferences" Required> 
+                <span></span>
+                <label for="">Preference (Style Of Photography)</label>
+            </div>
+            <br>
+            <br>
+            <div class="txt_field">
+                <input type="text" id="descr" name="descr" Required>
+                <span></span>
+                <label for="">Description</label>
+            </div>
+           <center>
+           
+            <button type="submit" onclick="popUp()">Book Now</button>
+      
+           </center>
+    </div>
+        </div>
+        </form>
+
+    </body>
+</html>

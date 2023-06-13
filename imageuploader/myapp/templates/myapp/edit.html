@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'editt.css' %}">
+    <title>Image UPLOADER</title>
+</head>
+<body>
+    <body bgcolor="black">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <div class="logo"><img src="{% static 'logo.jpg' %}" alt="logo"></div>
+                <li><a href="/cart">SHOP</a></li>
+                <li><a href="/edit">EDIT</a></li>
+                <li><a href="/booking">BOOKINGS</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+                <li><a href="/aboutus">ABOUT</a></li>
+                <li><a href="/home"><span class="material-symbols-outlined">home</span></a></li>
+                <li><a href="/profile"><span class="material-symbols-outlined">manage_accounts</span></a></li>
+            </ul>
+        </nav>
+        <section>
+            {% load static %}
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 12</div>
+                    <img src="{% static 'edit14.jpg'%}" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 12</div>
+                    <img src="{% static 'edit13.jpg'%}" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 12</div>
+                    <img src="{% static 'edit12.jpg'%}" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 12</div>
+                    <img src="{% static 'edit11.jpg'%}" style="width:100%">    
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 12</div>
+                    <img src="{% static 'edit10.jpg'%}" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 12</div>
+                    <img src="{% static 'edit8.jpg'%}" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">7 / 12</div>
+                    <img src="{% static 'edit7.jpg'%}" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">8 / 12</div>
+                    <img src="{% static 'edit4.jpg'%}" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">9 / 12</div>
+                    <img src="{% static 'edit2.jpg'%}" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">10 / 12</div>
+                    <img src="{% static 'edit14.jpg'%}" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">11 / 12</div>
+                    <img src="{% static 'edit15.jpg'%}" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">12 / 12</div>
+                    <img src="{% static 'edit16.jpg'%}" style="width:100%">
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <script>
+                let slideIndex = 0;
+                showSlides();
+                function showSlides() {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) { slideIndex = 1 }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                    setTimeout(showSlides, 2000);
+                }
+                if (window.history.replaceState) {
+                    window.history.replaceState(null, null, window.location.href);
+                }
+            </script>
+        </section>
+        <section class="wodd">
+        <div class="container">
+            <div class="hedding">
+                <h1 class="mb">UPLOAD YOUR IMAGE</h1>
+                <form action="" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{form}}
+                    <input type="submit" class="btn" value="Upload">
+                </form>
+            </div>
+            <div class="row">
+                {% for x in img %}
+                <div class="column">
+                    <div class="column1">
+                        <img src="{{x.photo.url}}" alt="" class="card-img-top" height="200px" width="330px">
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <p class="follow"><img src="{% static 'instalogo.jpg' %}" alt="" class="insta"></p>
+        <p class="text-footer">
+            Copyright &copy; 2022 - All Rights reserved
+        </p>
+    </footer>
+    </body>
+</html>
